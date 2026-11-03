@@ -1,30 +1,22 @@
-# REZ Media — statische website
+# REZ Media
 
-Eenvoudige versie van rezmedia.nl met uitsluitend HTML, CSS en lokale afbeeldingen. Geen installatie, WordPress of buildstap nodig. Ontwerp 2 gebruikt een klein JavaScript-bestand voor het starten en pauzeren van de YouTube-achtergrond.
+Statische portfoliosite met HTML, CSS en een lokaal gehoste video. Geen installatie of buildstap nodig.
 
-## Bekijken en aanpassen
+## Bestanden
 
-Open `index.html` in een browser. Alle teksten en de twaalf projecten staan in `index.html`; de vormgeving staat in `styles.css`. Afbeeldingen staan in `assets/images/`.
+- index.html: huidige donkere portfolio met twaalf projecten en contactgegevens.
+- style.css: responsive opmaak.
+- hero-video.js: gedempte autoplay en de afspeel/pauzeknop.
+- videos/header_video.mp4: lokale header-video.
+- assets/images/: logo en projectafbeeldingen.
+- old_website/: bewaarde eerste versie.
+
+## Bekijken
+
+Open index.html of gebruik een lokale webserver. De video vult de header met object-fit: cover; bij smalle schermen worden de zijkanten bijgesneden. Als autoplay door de browser wordt geblokkeerd, kan de bezoeker de afspeelknop gebruiken. Bij pauzeren blijft het videobeeld zichtbaar.
 
 ## GitHub Pages
 
-1. Push deze bestanden naar je GitHub-repository.
-2. Open **Settings → Pages**.
-3. Kies **Deploy from a branch**, selecteer je branch en **/ (root)** en klik op **Save**.
+Publiceer main vanuit / (root) onder Settings → Pages. Alle paden zijn relatief en werken ook onder /RezMedia/. Er is geen CNAME ingesteld.
 
-Alle lokale paden zijn relatief, zodat de site ook onder een repositorypad werkt. Er is bewust geen CNAME ingesteld: het bestaande domein blijft bij WordPress totdat je het zelf omzet.
-
-## Overgenomen inhoud
-
-Bron: https://rezmedia.nl/, opgehaald op 3 november 2026. Logo, twaalf projectafbeeldingen, credits, videolinks, contactgegevens en socialmedia-links zijn overgenomen. De geel-blauwe huisstijl is behouden in een vereenvoudigde responsive opmaak.
-
-De YouTube-achtergrond is vervangen door een vaste intro met een link naar dezelfde showreel. Video's en Google Maps openen via een link; er worden geen externe embeds of lettertypen geladen.
-
-De overige gepubliceerde WordPress-pagina's (`about`, `services`, `contact` en `sample-page`) bevatten standaard voorbeeldinhoud en zijn niet overgenomen. De echte contactgegevens staan op de homepage.
-
-## Tweede ontwerp
-
-Open design-2.html voor het alternatieve donkere portfolio. De bijbehorende opmaak staat in design-2.css. Het aangeleverde brede logo staat lokaal in assets/images/rez-media-logo-wide.png. De eerste versie is ongewijzigd behouden.
-
-
-Design 2 gebruikt nu dezelfde YouTube-showreel als de oorspronkelijke WordPress-site als grote videoachtergrond: autoplay, gedempt en op herhaling. Hiervoor wordt een externe YouTube-iframe geladen. De link PLAY REEL opent de video met geluid op YouTube.
+Broninhoud: rezmedia.nl. De voorbeeldpagina's uit WordPress zijn weggelaten. Projectvideo's openen op YouTube; de achtergrondvideo wordt direct vanaf de site geladen, zonder YouTube-embed.
