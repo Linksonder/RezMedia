@@ -1,6 +1,6 @@
 # REZ Media — statische website
 
-Eenvoudige versie van rezmedia.nl met uitsluitend HTML, CSS en lokale afbeeldingen. Geen installatie, JavaScript, WordPress of buildstap nodig.
+Eenvoudige versie van rezmedia.nl met uitsluitend HTML, CSS en lokale afbeeldingen. Geen installatie, WordPress of buildstap nodig. Ontwerp 2 gebruikt een klein JavaScript-bestand voor het starten en pauzeren van de YouTube-achtergrond.
 
 ## Bekijken en aanpassen
 
